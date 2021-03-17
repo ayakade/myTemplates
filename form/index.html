@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Validation Form Template</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Contact</h1>
+        <form id="contactForm">
+            <div class="fieldgroup required">
+                <div class="error-popup">
+                    <p>Please fill in all required field</p>
+                </div><!-- .error-popup -->
+
+                <label>Full Name:</label>
+                <input type="text" name="name" placeholder="your full name" value="" />
+                <div class="error-popup">
+                    <p>This field is required</p>
+                </div><!-- .error-popup -->
+            </div><!-- end of fieldgroup -->
+
+            <div class="fieldgroup required">
+                <label>Phone Number:</label>
+                <input type="text" name="phonenumber" placeholder="your phone number" value="" />
+                <div class="error-popup">
+                    <p>This field is required</p>
+                </div><!-- .error-popup -->
+            </div><!-- end of fieldgroup -->
+
+            <div class="fieldgroup required">
+                <label>Email Address:</label>
+                <input type="text" name="email" placeholder="your email address" value=""/>
+                <div class="error-popup">
+                    <p>This field is required</p>
+                </div><!-- .error-popup -->
+            </div><!-- end of fieldgroup -->
+
+            <div class="fieldgroup required">
+                <label>Message:</label>
+                <textarea name="message" placeholder="message"></textarea>
+                <div class="error-popup">
+                    <p>This field is required</p>
+                </div><!-- .error-popup -->
+            </div><!-- end of fieldgroup -->
+            <input id="submit"type="submit" value="Submit">
+        </form>
+    </div><!-- .wrapper -->
+
+    <script type="text/javascript" src="js/form-validation.js"></script>
+</body>
+</html>
